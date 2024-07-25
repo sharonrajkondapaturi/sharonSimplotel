@@ -4,10 +4,15 @@ body {
     margin: 0px;
 }
 
-.display {
+.display-background {
     min-height: 100vh;
     background-image: linear-gradient(to right, #f567e2, #f0c93e);
     width: 100%;
+}
+
+.no-dec {
+    text-decoration: none;
+    color: #000000;
 }
 
 .navbar {
@@ -26,7 +31,7 @@ body {
     justify-content: center;
     align-content: center;
     list-style-type: none;
-    padding-left: 180px;
+    padding-left: 170px;
 }
 
 .unlisticons {
@@ -35,7 +40,7 @@ body {
     justify-content: flex-end;
     align-content: center;
     list-style-type: none;
-    padding-right: 30px;
+    padding-right: 25px;
 }
 
 .icons {
@@ -43,6 +48,15 @@ body {
     width: 30.2px;
     align-self: center;
     margin-right: 20px;
+}
+
+.button-items {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 50px;
+    font-family: Times New Roman;
+    font-size: 20px;
 }
 
 .backgroundImage {
@@ -60,7 +74,7 @@ body {
 .background-red {
     background-color: #FF7171;
     width: 584.7px;
-    height: 256.22px;
+    height: 286.22px;
     padding: 14px 80px 14px 30px;
 }
 
@@ -68,10 +82,62 @@ body {
     background-color: rgba(255, 0.3, 0.4, 0.3);
 }
 
-.list {
-    font-size: 20px;
-    margin-right: 60px;
-    font-family: Times New Roman;
+.background-order {
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #f567e2, #f0c93e);
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: none;
+}
+
+.food-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.food-item {
+    width: 250px;
+    height: 400px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.image {
+    width: 250px;
+    height: 200px;
+    border-top-right-radius: 40px;
+}
+
+.order-heading {
+    color: #ffffff;
+    font-family: Monospace;
+    font-weight: 500;
+}
+
+.food-headings {
+    color: #000000;
+    font-family: Roboto;
+}
+
+.order-button {
+    padding: 10px;
+    width: 100px;
+    background-color: #f5f5ed;
+    border-radius: 25px;
+    border: none;
 }
 
 .heading {
@@ -94,17 +160,17 @@ body {
         height: 8vh;
     }
 
-    .list {
-        font-size: 21.04px;
-        margin-right: 50px;
-    }
-
     .unlistitems {
-        padding-left: 100px;
+        padding-left: 90px;
     }
 
     .unlisticons {
-        padding-left: 22px;
+        padding-left: 10px;
+    }
+
+    .button-items {
+        font-size: 21.04px;
+        margin-right: 40px;
     }
 
     .background-red {
@@ -142,17 +208,17 @@ body {
         width: 100%;
     }
 
-    .list {
-        font-size: 16.04px;
-        margin-right: 35px;
-    }
-
     .unlistitems {
         padding-left: 60px;
     }
 
     .unlisticons {
-        padding-left: 30px;
+        padding-left: 5px;
+    }
+
+    .button-items {
+        font-size: 16.04px;
+        margin-right: 30px;
     }
 
     .background-red {
@@ -187,20 +253,20 @@ body {
 
 @media screen and (max-width:767px) {
     .navbar {
-        width: 100%;
-    }
-
-    .list {
-        font-size: 14.04px;
-        margin-right: 25px;
+        height: 12vh;
     }
 
     .unlistitems {
-        padding-left: 35px;
+        padding-left: 30px;
     }
 
     .unlisticons {
-        padding-left: 20px;
+        padding-left: 0px;
+    }
+
+    .button-items {
+        font-size: 14.04px;
+        margin-right: 10px;
     }
 
     .background-red {
@@ -210,9 +276,9 @@ body {
     }
 
     .icons {
-        height: 13.2px;
-        width: 13.2px;
-        margin-right: 10px;
+        height: 15.2px;
+        width: 15.2px;
+        margin-right: 7px;
     }
 
     .heading {
@@ -235,7 +301,7 @@ body {
 
 @media screen and (max-width:575px) {
     .navbar {
-        height: 10vh;
+        height: 9vh;
     }
 
     .background-red {
@@ -249,12 +315,7 @@ body {
     }
 
     .unlisticons {
-        padding: 0px;
-    }
-
-    .list {
-        font-size: 10.04px;
-        margin-right: 8px;
+        padding-left: 2px;
     }
 
     .heading {
@@ -271,12 +332,18 @@ body {
     }
 
     .icons {
-        height: 13.2px;
-        width: 13.2px;
-        margin-right: 6px;
+        height: 7px;
+        width: 7px;
+        margin-right: 5px;
+        margin-top: 3px;
     }
 
     .lighten {
         background-color: rgba(260, 0.3, 0.3, 0.3);
+    }
+
+    .button-items {
+        font-size: 7px;
+        margin-right: 0px;
     }
 }
